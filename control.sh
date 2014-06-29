@@ -2,6 +2,9 @@
 
 USER=www-data
 
+RACK_ENV=none
+RAILS_ENV=production
+
 #check for correct user
 if [ `whoami` != "$USER" ]; then
   echo "This script should be run as $USER";
