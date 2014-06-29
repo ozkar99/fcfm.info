@@ -31,5 +31,19 @@ gem 'unicorn'
 # To use debugger
 gem 'debugger'
 
+#testing/dev gems:
+group :development, :test do
+
+  #cuke
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+
+  #rspec 
+  gem 'rspec-rails', '~> 3.0.0'
+end
+
 #Additional Gems
 gem 'haml'
+gem 'execjs'
+gem 'therubyracer'
