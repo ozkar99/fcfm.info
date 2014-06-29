@@ -1,0 +1,293 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-06-29 14:40:18 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (7ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (201.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (111.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-06-29 16:17:28 -0500
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Processing by Rails::InfoController#properties as HTML
+  Rendered inline template (7.2ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:33:03 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:33:07 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:33:35 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 143ms
+
+ActionView::Template::Error (Inconsistent indentation: 6 spaces used for indentation, but the rest of the document was indented using 4 spaces.):
+    1: <!DOCTYPE html>
+    2: %html
+    3:     %head
+    4:       %title fcfm.info
+    5:       = stylesheet_link_tag    "application", :media => "all" 
+    6:       = javascript_include_tag "application" 
+    7:       = csrf_meta_tags 
+  app/views/layouts/application.html.haml:4
+
+
+  Rendered /home/ozkar/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.3ms)
+  Rendered /home/ozkar/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/ozkar/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:34:45 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (7.9ms)
+Warning. Error encountered while saving cache /home/ozkar/code/projects/fcfm.info/tmp/cache/sass/368b389771b0fb4a86aa50c8cc21ef01e035cd08/news.css.scssc: can't dump anonymous class #<Class:0x0000000358c9f8>
+Compiled news.css  (13ms)  (pid 30737)
+Compiled application.css  (72ms)  (pid 30737)
+Compiled jquery.js  (3ms)  (pid 30737)
+Compiled jquery_ujs.js  (0ms)  (pid 30737)
+Compiled news.js  (121ms)  (pid 30737)
+Compiled application.js  (152ms)  (pid 30737)
+Completed 200 OK in 410ms (Views: 408.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:34:45 -0500
+Served asset /jquery.js - 200 OK (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:34:45 -0500
+Served asset /jquery_ujs.js - 200 OK (10ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:34:45 -0500
+Served asset /news.js - 200 OK (9ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:34:46 -0500
+Served asset /news.css - 200 OK (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:39:53 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 125ms (Views: 123.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:39:54 -0500
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:39:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:39:54 -0500
+Served asset /news.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:39:55 -0500
+Served asset /news.css - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:41:25 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:41:25 -0500
+Served asset /news.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:41:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:41:25 -0500
+Served asset /news.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:41:27 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:43:48 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:43:48 -0500
+Served asset /news.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:43:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:43:48 -0500
+Served asset /news.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:43:49 -0500
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:43:51 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:43:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:43:51 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:43:51 -0500
+Served asset /news.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:43:51 -0500
+Served asset /news.css - 304 Not Modified (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:44:32 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:44:33 -0500
+Served asset /news.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:33 -0500
+Served asset /news.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:34 -0500
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:44:35 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:44:35 -0500
+Served asset /news.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:35 -0500
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:35 -0500
+Served asset /news.js - 304 Not Modified (2ms)
+Served asset /jquery.js - 304 Not Modified (76ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:44:36 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:44:36 -0500
+Served asset /news.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:36 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:36 -0500
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:44:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /news.js - 304 Not Modified (9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:45:00 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 181ms
+
+ActionView::Template::Error (Missing partial layouts/header with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/home/ozkar/code/projects/fcfm.info/app/views"
+):
+    8: 
+    9:     %body
+    10:         .header 
+    11:             =render 'layouts/header'
+    12:         .content
+    13:             =yield 
+    14:         .footer 
+  app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___1954403859583873307_40153280'
+
+
+  Rendered /home/ozkar/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+  Rendered /home/ozkar/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/ozkar/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 16:45:35 -0500
+Processing by NewsController#show as HTML
+  Rendered news/show.html.haml within layouts/application (8.1ms)
+  Rendered layouts/_header.html.haml (1.4ms)
+  Rendered layouts/_footer.html.haml (1.4ms)
+Completed 200 OK in 174ms (Views: 173.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2014-06-29 16:45:36 -0500
+Served asset /news.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-29 16:45:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2014-06-29 16:45:36 -0500
+Served asset /news.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-29 16:45:37 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)

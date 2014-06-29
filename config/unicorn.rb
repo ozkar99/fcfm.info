@@ -6,6 +6,9 @@ preload_app true
 # Set process id path
 pid "/tmp/fcfm.info.pid"
 
+#listen on port 3000
+listen "0.0.0.0:3000"
+
 before_fork do |server, worker|
   Signal.trap 'TERM' do
     puts 'Unicorn master intercepting TERM and sending myself QUIT instead'
