@@ -4,7 +4,6 @@ gem 'rails', '3.2.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3'
 
 
@@ -26,8 +25,8 @@ gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-gem 'unicorn'
-gem 'unicorn-rails'
+gem 'unicorn', '4.8.3'
+gem 'unicorn-rails', '2.1.1'
 
 # To use debugger
 gem 'debugger'
@@ -36,15 +35,14 @@ gem 'debugger'
 group :development, :test do
 
   #cuke
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '~> 1.4.1', :require => false
   # database_cleaner is not required, but highly recommended
-  gem 'database_cleaner'
-
+  gem 'database_cleaner', '~> 1.3.0'
   #rspec 
   gem 'rspec-rails', '~> 3.0.0'
 end
 
 #Additional Gems
-gem 'haml'
+gem 'haml', '>=4.0.5'
 gem 'execjs'
 gem 'therubyracer'
