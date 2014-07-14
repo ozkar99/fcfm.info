@@ -1,1 +1,17 @@
-this is the header.
+%nav{ :class => "navbar navbar-default", :role => "navigation" }
+    .container-fluid
+        .navbar-header
+            %a.navbar-brand{ :href => "/" } fcfm.info
+        %div{ :class => "collapse navbar-collapse"}
+            %ul{ :class => "nav navbar-nav" }
+                %li.active
+                    %a{ :href => "/about" } acerca
+                %li.dropdown
+                    = render 'layouts/navigation/menu'
+            
+            %form{ :class => "navbar-form navbar-left", :role => "search" }
+                = render 'layouts/navigation/search'
+
+            %div{ :class => "nav navbar-rigth" }
+                = render 'layouts/navigation/user'
+
